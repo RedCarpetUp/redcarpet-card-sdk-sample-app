@@ -5,5 +5,5 @@ The apk built with code from this repository is published on the Play Store.Plea
 
 The documentation to our Android SDK is available on
 
-redcarpetup.com/android-sdk
+redcarpet.ai/android-sdk
 

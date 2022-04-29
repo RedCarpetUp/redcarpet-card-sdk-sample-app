@@ -9,12 +9,15 @@ android {
     defaultConfig {
         applicationId "com.example.redcptsdksample"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        profile {
+            initWith debug
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -28,8 +31,14 @@ android {
         jvmTarget = "1.8"
     }
 }
-
+String storageUrl = System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com"
 repositories {
+    maven {
+        url '/Users/balrampandey/Documents/Redcarpet/flutter/vendors/rc_onboarding/build/host/outputs/repo'
+    }
+    maven {
+        url "$storageUrl/download.flutter.io"
+    }
     mavenLocal()
     jcenter()
     flatDir {
@@ -40,14 +49,9 @@ repositories {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
-    implementation "com.redcpt:sdk:0.0.1"
-    implementation "com.redcpt:sdk-expensemanager:0.0.1"
-    implementation "com.redcpt:sdk-otp:0.0.1"
-    implementation "com.redcpt:sdk-permissions:0.0.1"
-    implementation "com.redcpt:sdk-utilitiessdk:0.0.1"
-    implementation "com.redcpt:sdk-verification:0.0.1"
-    implementation "com.redcpt:sdk-services:0.0.1"
-    implementation "com.redcpt:sdk-appwisesdk:0.0.1"
+    debugImplementation 'com.redcarpetup.rewardpay.rc_onboarding:flutter_debug:1.0'
+    profileImplementation 'com.redcarpetup.rewardpay.rc_onboarding:flutter_profile:1.0'
+    releaseImplementation 'com.redcarpetup.rewardpay.rc_onboarding:flutter_release:1.0'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'

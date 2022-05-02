@@ -6,4 +6,12 @@ The apk built with code from this repository is published on the Play Store.Plea
 
 Learn more about the provided samples, documentation, integrating the SDK into your app, accessing source code, and more at https://www.redcarpet.ai/sdk-documentation
 
+FEATURES
+--------
+* [Customer Onboarding](https://www.redcarpet.ai/sdk-documentation)
+* [Redcarpet Card Managemet](https://www.redcarpet.ai/sdk-documentation)
+* [Money Management](https://www.redcarpet.ai/sdk-documentation)
+* [App Bill/Emi Payment](https://www.redcarpet.ai/sdk-documentation)
+
+
 

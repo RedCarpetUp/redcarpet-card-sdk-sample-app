@@ -10,7 +10,7 @@ class SampleApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        sdk = RedCpt.init(this, "4d0de8ca9539459fb3a3b1d56b1f6f19")
+        sdk = RedCpt.init(this, "<API KEY>")
     }
 
 }

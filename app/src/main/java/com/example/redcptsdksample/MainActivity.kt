@@ -42,10 +42,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btLoginRx.setOnClickListener {
-            /*  val intent = Intent(this, RxLoginActivity::class.java)
-              startActivity(intent)*/
-        }
+      
 
         btExpenseDash.setOnClickListener {
             sdk.getExpenseManagerInstance().showExpenseDash(this)
@@ -156,7 +153,6 @@ class MainActivity : AppCompatActivity() {
             } else {
                 val uri = data.data
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && uri != null) {
-//                    filePath = getPathFromUri(this, uri)!!
                 }
             }
             if (filePath.isEmpty()) {

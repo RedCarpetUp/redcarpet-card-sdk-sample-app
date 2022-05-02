@@ -55,6 +55,6 @@ buildscript {
 Get In Touch
 -------------
 For more details please write us on  [partnerships@redcarpet.ai](partnerships@redcarpet.ai)
-For Deedback write us on [android@redcarpetup.com](android@redcarpetup.com),
+For feedback write us on [android@redcarpetup.com](android@redcarpetup.com),
 
 

@@ -31,8 +31,7 @@ class MainActivity : AppCompatActivity() {
         sdk.setDevMode(true)
 
         btLogin.setOnClickListener {
-            logData()
-            Log.e("IS OTP VERIFIED", sdk.isOtpVerified().toString())
+       
             if (sdk.isOtpVerified()) {
                 getVerificationStatus()
                 AppWise.getInstance(applicationContext).uploadData()

@@ -21,25 +21,9 @@ Facebook SDKs are published to Maven as independent modules. To utilize a featur
 include the appropriate dependency (or dependencies) listed below in your `app/build.gradle` file.
 ```gradle
 dependencies {
- 
- // Redcarpet Core
- 
-    implementation "com.redcpt:sdk:0.0.1"
-    
- // Redcarpet Expense Manager 
- 
-    implementation "com.redcpt:sdk-expensemanager:0.0.1"
-    implementation "com.redcpt:sdk-utilitiessdk:0.0.1"
-    
- // Redcarpet Onboarding   
- 
-      implementation "com.redcpt:sdk-otp:0.0.1"
-      implementation "com.redcpt:sdk-permissions:0.0.1"
-      implementation "com.redcpt:sdk-verification:0.0.1"
-    
-//  Redcarpet Card Management 
 
-    implementation "com.redcpt:sdk-services:0.0.1"
+     releaseImplementation 'com.redcarpetup.rewardpay.rc_onboarding:flutter_release:1.0'
+     
 }
 ```
 
@@ -50,6 +34,16 @@ buildscript {
         mavenCentral()
     }
 }
+```
+
+```
+ compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 ```
 
 Get In Touch

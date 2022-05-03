@@ -1,4 +1,4 @@
-package com.example.redcptsdksample
+package com.redcarpetup.sdk.android
 
 import org.junit.Test
 
